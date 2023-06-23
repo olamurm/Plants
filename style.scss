@@ -16,12 +16,13 @@ body {
 .c-green {
   color: #00730c;
 }
-
 .show {
   display: none;
 }
 header {
   margin: 0 auto;
+}
+.header {
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +74,6 @@ header {
   justify-content: space-between;
 }
 .nav-bottom {
-  // background-color: #afa6a6;
   color: #000;
   height: 70px;
   width: 100%;
@@ -113,14 +113,7 @@ header {
   }
 }
 
-// tablet
-// @media (min-width: 768px) {
-//   .show {
-//     display: block;
-//   }
-// }
-
-// // desktop
+// desktop
 @media (min-width: 1410px) {
   .show {
     display: flex;
