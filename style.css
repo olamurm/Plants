@@ -39,13 +39,52 @@ header {
   align-content: space-between;
 }
 
-.btm {
+.btn {
   width: 170px;
   height: 50px;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
   border-width: 0;
+}
+
+.bgi {
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.email-1 {
+  background-image: url(images/email-1.svg);
+}
+
+.phone-call-1 {
+  background-image: url(images/phone-call-1.svg);
+}
+
+.location-1 {
+  background-image: url(images/location-1.svg);
+}
+
+.arrow-icon-white {
+  background-image: url(images/arrow-icon-white.svg);
+}
+
+.menu-1 {
+  background-image: url(images/menu-1.svg);
+}
+
+.phone {
+  background-image: url(images/phone.svg);
+}
+
+.select {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-top {
@@ -58,7 +97,12 @@ header {
   padding: 20px;
 }
 .nav-top .select {
-  width: 66px;
+  width: 52px;
+  font-size: 12px;
+}
+.nav-top .select .bgi {
+  background-size: 9px;
+  background-position: right;
 }
 
 .nav-address {
@@ -73,15 +117,6 @@ header {
   text-decoration: none;
   display: flex;
   align-items: center;
-}
-.nav-address img {
-  width: 20px;
-  height: 20px;
-}
-
-.select {
-  cursor: pointer;
-  justify-content: space-between;
 }
 
 .nav-bottom {
@@ -106,9 +141,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.navbar img {
+.navbar .bgi {
   width: 30px;
   height: 30px;
+  background-size: 30px;
 }
 
 .call {
@@ -120,18 +156,34 @@ header {
   align-content: center;
   justify-content: center;
 }
-.call img {
-  width: 20px;
-  height: 20px;
+.call .bgi {
+  background-size: 20px;
 }
 
 @media (min-width: 1410px) {
   .show {
     display: flex;
   }
+  .show .bgi {
+    background-size: 12px;
+  }
+  .arrow-icon-black {
+    background-image: url(images/arrow-icon-black.svg);
+  }
+  .arrow-icon-green {
+    background-image: url(images/arrow-icon-green.svg);
+  }
   .nav-top {
-    width: 1410px;
+    max-width: 1410px;
+    width: 100%;
     height: 60px;
+  }
+  .nav-top .select {
+    width: 66px;
+    font-size: 14px;
+  }
+  .nav-top .select .bgi {
+    background-size: 12px;
   }
   .nav-bottom {
     width: 1410px;
@@ -145,21 +197,15 @@ header {
     height: 60px;
     width: 747px;
   }
-  .nav-address a {
-    font-size: 14px;
-  }
   .nav-address span {
     padding-left: 10px;
-  }
-  .select {
-    display: flex;
-    align-items: center;
+    font-size: 14px;
   }
   .navbar {
     width: 890px;
     flex-direction: row;
   }
-  .menu .btm {
+  .menu .btn {
     display: none;
   }
   .menu ul {
@@ -184,9 +230,8 @@ header {
     align-items: center;
     font-size: 18px;
   }
-  .call img {
-    width: 30px;
-    height: 30px;
+  .call .bgi {
+    background-size: 30px;
     margin-right: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
