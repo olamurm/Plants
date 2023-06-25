@@ -227,13 +227,13 @@ a {
 
 h2 {
   display: block;
-  font-size: 58px;
+  font-size: 30px;
   font-family: Nunito;
   font-weight: 800;
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   font-family: Nunito;
   line-height: 30px;
 }
@@ -296,6 +296,12 @@ p {
   }
   .desktop .bgi {
     background-size: 12px;
+  }
+  h2 {
+    font-size: 58px;
+  }
+  p {
+    font-size: 18px;
   }
   .arrow-icon-black {
     background-image: url(images/arrow-icon-black.svg);
