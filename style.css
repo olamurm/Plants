@@ -18,16 +18,27 @@ body {
   background-color: #fff;
 }
 
-.c-green {
+.color-green {
   color: #00730c;
 }
 
-.show {
+.desktop {
   display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+.container {
+  max-width: 1410px;
 }
 
 header {
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .header {
@@ -45,7 +56,7 @@ header {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  border-width: 0;
+  border: none;
 }
 
 .bgi {
@@ -109,10 +120,11 @@ header {
   display: flex;
   justify-content: flex-start;
   width: 120px;
+  gap: 30px;
 }
-.nav-address a {
+
+a {
   font-family: "Nunito", sans-serif;
-  margin-right: 30px;
   color: white;
   text-decoration: none;
   display: flex;
@@ -128,7 +140,8 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.nav-bottom img {
+
+.logo img {
   width: 90px;
   height: 40px;
 }
@@ -160,11 +173,128 @@ header {
   background-size: 20px;
 }
 
+.salutation {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/BG-Img.svg), linear-gradient(61deg, rgba(0, 115, 12, 0.81) 0.01%, rgba(255, 255, 255, 0.404) 75.75%);
+  background-size: 83px 118px, 100%;
+  background-position: bottom left, right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 85px;
+  padding-bottom: 35px;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.text-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.landscape-plainting-services {
+  display: flex;
+  color: #212529;
+  font-weight: 700;
+  gap: 0 5px;
+  align-items: flex-end;
+}
+
+.vector {
+  background-image: url(images/Vector.svg);
+  width: 24px;
+  height: 20px;
+}
+
+.color-main-1 {
+  color: #00730c;
+}
+
+.color-main-2 {
+  color: #212529;
+}
+
+.color-p {
+  color: #212529;
+}
+
+h2 {
+  display: block;
+  font-size: 58px;
+  font-family: Nunito;
+  font-weight: 800;
+}
+
+p {
+  font-size: 18px;
+  font-family: Nunito;
+  line-height: 30px;
+}
+
+.Arrow-rigth-Icon {
+  background-image: url(images/Arrow-rigth-Icon-green.svg);
+}
+
+.button {
+  display: flex;
+  gap: 19px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.button .btn {
+  width: 300px;
+  height: 40px;
+  padding: 12px 105px;
+  font-size: 16px;
+}
+.button a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  gap: 15px;
+  color: #00730c;
+}
+
+.row {
+  display: flex;
+  width: 325px;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.Happy-Customrs-mob {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 130px;
+  height: 30px;
+  font-size: 10px;
+}
+
+.round-button-gradient {
+  border-radius: 32px;
+  background: linear-gradient(61deg, rgba(103, 185, 111, 0.671) 0.01%, rgba(255, 255, 255, 0.712) 75.75%);
+}
+
 @media (min-width: 1410px) {
-  .show {
+  .mobile {
+    display: none;
+  }
+  .desktop {
     display: flex;
   }
-  .show .bgi {
+  .desktop .bgi {
     background-size: 12px;
   }
   .arrow-icon-black {
@@ -174,8 +304,7 @@ header {
     background-image: url(images/arrow-icon-green.svg);
   }
   .nav-top {
-    max-width: 1410px;
-    width: 100%;
+    width: 100vw;
     height: 60px;
   }
   .nav-top .select {
@@ -186,7 +315,6 @@ header {
     background-size: 12px;
   }
   .nav-bottom {
-    width: 1410px;
     height: 85px;
   }
   .nav-bottom .logo img {
@@ -212,26 +340,85 @@ header {
     width: 627px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     font-size: 16px;
     font-weight: bold;
   }
-  .menu li img {
-    width: 12px;
-    margin-left: 5px;
+  .btn {
+    width: 175px;
+    height: 60px;
+    padding: 13px 35px;
+    font-size: 18px;
   }
   .call {
     width: 170px;
     height: 50px;
-    border-radius: 5px;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    gap: 10px;
   }
   .call .bgi {
     background-size: 30px;
-    margin-right: 10px;
+  }
+  .salutation {
+    flex-direction: row-reverse;
+    align-items: center;
+    background-size: 197px 278px, 100%;
+  }
+  .salutation img {
+    width: 50%;
+  }
+  .text-heading {
+    width: 558px;
+  }
+  .landscape-plainting-services {
+    font-size: 16px;
+  }
+  .Perfect-Landscape {
+    padding: 10px 0 15px 0;
+  }
+  .color-p {
+    color: #676767;
+  }
+  .content {
+    padding-bottom: 100px;
+    gap: 50px 0;
+  }
+  .button {
+    gap: 0 30px;
+    flex-direction: row;
+  }
+  .button .btn {
+    width: 175px;
+    height: 58px;
+    padding: 13px 35px;
+    font-size: 18px;
+  }
+  .button a {
+    color: #676767;
+  }
+  .button .Arrow-rigth-Icon {
+    background-image: url(images/Arrow-rigth-Icon-gray.svg);
+  }
+  .row {
+    width: 556px;
+  }
+  .Happy-Customrs-desk {
+    gap: 10px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    font-weight: 700;
+    width: 150px;
+  }
+  .round-button-gradient {
+    width: 75px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(61deg, rgba(0, 115, 12, 0.81) 0.01%, rgb(253, 253, 253) 75.75%);
   }
 }/*# sourceMappingURL=style.css.map */
