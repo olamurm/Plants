@@ -1,7 +1,7 @@
 .about-container {
     max-width: 375px;
     width: 100%;
-    padding: 30px 20px;
+    padding: 30px 20px 50px 20px;
     margin: 0 auto;
 }
 
@@ -120,7 +120,7 @@
     background-image: url(images/Clients-Trust.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
 }
 
-.about__button {
+.more-button {
     margin: 0 auto;
     width: 167px;
     height: 40px;
@@ -217,7 +217,7 @@
         background-size: 50px 50px, 55px 42px, 67px 67px;
     }
 
-    .about__button {
+    .more-button {
         margin: 0;
         width: 190px;
         height: 50px;

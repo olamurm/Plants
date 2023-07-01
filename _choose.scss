@@ -1,0 +1,77 @@
+.choose {
+    background-color: $main-3-color;
+}
+
+.choose-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    width: 100%;
+    padding: 50px 20px 50px 20px;
+    margin: 0 auto;
+    background-image: url(images/chooseImgPng.svg);
+    background-repeat: no-repeat;
+    gap: 30px;
+}
+
+.choose-image {
+    img {
+        width: 345px;
+        height: 217px;
+    }
+
+    // margin: 0 auto;
+}
+
+.choose-content {
+    color: $color-white;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.choose__text {
+    text-align: center;
+
+    h2 {
+        /* Mobile Font / H1 / Bold */
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+
+    p {
+        /* Mobile Font/H6/Regular */
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-bottom: 40px;
+    }
+}
+
+.choose__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.choose-flags {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    font-size: 16px;
+    text-transform: capitalize;
+
+    p {
+        font-size: 16px;
+        padding-left: 30px;
+        background-image: url(images/tick.svg);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+}
