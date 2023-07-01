@@ -1,0 +1,41 @@
+$color-white: white;
+// $padding-s: 20px;
+// $padding-m: $padding-s * 2;
+
+// @mixin flexCenter($aling: center, $justify: center): display: flex;
+// align-items: $aling;
+// justify-content: $justify;
+// }
+
+$main-bg-white-color: #fff;
+$main-1-bg-color: rgba(255, 248, 241, 1);
+$main-1-color: rgba(0, 115, 12, 1);
+$main-2-black-color: rgba(11, 11, 11, 1);
+$main-3-color: rgba(12, 75, 53, 1);
+$main-gradient-1-color: linear-gradient(61deg, rgba(0, 115, 12, 0.81) 0.01%, rgba(251, 246, 238, 0.00) 75.75%);
+$linear-gradient: linear-gradient(180deg, rgba(255, 248, 241, 1), rgba(203, 229, 206, 1));
+$heading-font-color: rgba(33, 37, 41, 1);
+$paragraph-color: rgba(103, 103, 103, 1);
+
+$btm-w20: (
+  width: 20px,
+  height: 20px
+);
+$btm-w170: (
+  width: 170px,
+  height: 50px
+);
+$btm-w175: (
+  width: 175px,
+  height: 60px
+);
+$btm-r50: (
+  width: 50px,
+  height: 50px,
+  border-radius: 50%
+);
+$btm-w40: (
+  width: 40px,
+  height: 34px,
+  border-radius: 10px
+);

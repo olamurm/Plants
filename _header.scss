@@ -1,0 +1,260 @@
+header span {
+    display: none;
+}
+
+.header-container {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-top {
+    height: 55px;
+    background-color: $main-3-color;
+    color: $color-white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: $main-1-color;
+    border: 1px solid $main-1-color;
+    border-radius: 5px;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-white;
+        color: $main-1-color;
+    }
+}
+
+.addressbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.addressbar-email {
+    background-image: url(images/email-1.svg);
+}
+
+.addressbar-tel {
+    background-image: url(images/phone-call-1.svg);
+}
+
+.addressbar-location {
+    background-image: url(images/location-1.svg);
+}
+
+.addressbar-bgi {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.arrow-down {
+    background-image: url(images/arrow-down-white.svg);
+}
+
+.selection {
+    width: 52px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+
+    background-image: url(images/arrow-down-white.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    background-size: 7px 3.5px;
+}
+
+.navbar {
+    background: $main-bg-white-color;
+    color: $main-2-black-color ;
+    box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 0;
+}
+
+.logo {
+    width: 90px;
+    height: 40px;
+    background-image: url(images/1-LOGO.svg);
+    background-size: 90px 40px;
+}
+
+.navbar-buttons {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    span {
+        /* Button/Button Text */
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 34px;
+        text-transform: capitalize;
+    }
+}
+
+
+.nav-btn {
+    order: 1;
+    width: 40px;
+    height: 34px;
+    border-radius: 10px;
+    background: $main-1-color;
+
+    &:hover .navbar-phone {
+        background-image: url(images/phone-green.svg);
+    }
+}
+
+.navbar-phone {
+    width: 20px;
+    height: 20px;
+    background-image: url(images/phone-white.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar-menu-btn {
+    order: 2;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/menu-1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+
+
+@media (min-width: 1410px) {
+    .desktop {
+        display: block;
+    }
+
+    .header-container {
+        max-width: 1410px;
+        padding: 0;
+    }
+
+    .navbar-top {
+        height: 60px;
+    }
+
+    .addressbar-bgi {
+        width: 25px;
+        height: 25px;
+        background-size: 25px 25px;
+    }
+
+    header span {
+        display: block;
+    }
+
+    .selection {
+        width: 66px;
+        height: 25px;
+        font-size: 14px;
+        line-height: 25px;
+
+        background-size: 12px 6.5px;
+    }
+
+    .navbar-buttons {
+        width: 80%;
+    }
+
+    .navbar-phone {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .nav-btn {
+        display: flex;
+        justify-content: center;
+        order: 2;
+        width: 170px;
+        height: 50px;
+        border-radius: 5px;
+
+        &:hover span {
+            background-color: $color-white;
+            color: $main-1-color;
+        }
+    }
+
+    .navbar-menu-btn {
+        display: none;
+    }
+
+    .navbar-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        order: 1;
+        color: $heading-font-color ;
+        /* Button/Button Text */
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: capitalize;
+
+        li:hover {
+            cursor: pointer;
+            color: $main-1-color;
+        }
+    }
+
+    .navbar-item {
+        &:after {
+            content: url(images/arrow-down-black.svg);
+            width: 12px;
+            height: 6.8px;
+        }
+
+        &:hover {
+            &:after {
+                content: url(images/arrow-down-green.svg)
+            }
+        }
+    }
+}

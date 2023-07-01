@@ -1,0 +1,231 @@
+.services {
+    max-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 20px 0 20px;
+
+}
+
+.services-header {
+    color: $heading-font-color;
+    text-align: center;
+    padding-bottom: 30px;
+
+    h2 {
+        /* Mobile Font / H1 / Bold */
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 15px;
+    }
+
+    p {
+        /* Mobile Font/H6/Regular */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
+
+.services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-card {
+    width: 100%;
+    color: $heading-font-color;
+    background-image: url(images/service-card.svg);
+    background-repeat: no-repeat;
+    background-size: 112px;
+    background-position-x: left;
+    background-position-y: center;
+    box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: $main-1-color;
+        color: $color-white;
+    }
+
+
+}
+
+.card-content {
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: left;
+    padding-left: 70px;
+
+    h5 {
+        text-align: left;
+        /* Mobile Font/H5/Bold */
+        font-size: 16px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    p {
+        /* Mobile Font/H6/Regular */
+        font-size: 14px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+}
+
+.tree-planting {
+    background-image: url(images/Tree-Planting.svg);
+
+    &:hover {
+        background-image: url(images/Tree-Planting-Active.svg);
+    }
+}
+
+.grass-cuttin {
+    background-image: url(images/Grass-Cutting.svg);
+
+    &:hover {
+        background-image: url(images/Grass-Cutting-Active.svg);
+    }
+}
+
+.garden-design {
+    background-image: url(images/Garden-Design.svg);
+
+    &:hover {
+        background-image: url(images/Garden-Design-Active.svg);
+    }
+}
+
+.plant-growing {
+    background-image: url(images/Plant-Growing.svg);
+
+    &:hover {
+        background-image: url(images/Plant-Growing-Active.svg);
+    }
+}
+
+.flower-scaping {
+    background-image: url(images/Flower-Scaping.svg);
+
+    &:hover {
+        background-image: url(images/Flower-Scaping-Active.svg);
+    }
+}
+
+.branch-cutting {
+    background-image: url(images/Branch-cutting.svg);
+
+    &:hover {
+        background-image: url(images/Branch-cutting-Active.svg);
+    }
+}
+
+.pests {
+    background-image: url(images/Pests.svg);
+
+    &:hover {
+        background-image: url(images/Pests-Active.svg);
+    }
+}
+
+.watering {
+    background-image: url(images/Watering-Irrigation.svg);
+
+    &:hover {
+        background-image: url(images/Watering-Irrigation-Active.svg);
+    }
+}
+
+@media (min-width: 1410px) {
+    .services {
+        max-width: 1410px;
+        padding: 100px 0 0 0;
+
+    }
+
+    .services-header {
+        color: $heading-font-color;
+        text-align: center;
+        padding-bottom: 30px;
+        max-width: 1136px;
+        margin: 0 auto;
+
+        h2 {
+
+            /* H3/Extra Bold */
+            font-size: 45px;
+            font-weight: 800;
+        }
+
+        p {
+            /*/H6/Regular */
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    .services-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .services-card {
+        color: $heading-font-color;
+        background-image: url(images/service-card.svg);
+        background-repeat: no-repeat;
+        background-size: 176px;
+        background-position-y: top;
+        background-position-x: center;
+        padding: 50px;
+        width: 330px;
+        height: 366px;
+
+        &:hover {
+            background-color: $main-1-color;
+            color: $color-white;
+
+        }
+    }
+
+    .card-content {
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        padding-top: 120px;
+        text-align: center;
+        padding-left: 0;
+
+        h5 {
+            text-align: center;
+            /*/H5/Bold */
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+
+        p {
+            /* /H6/Regular */
+
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}

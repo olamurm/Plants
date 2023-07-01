@@ -2,134 +2,254 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
         rel="stylesheet">
+
     <title>Plants</title>
 </head>
 
 <body>
-    <header>
-        <div class="header bgc-green-dark">
-            <div class="container nav-top">
-                <nav class="nav-address">
-                    <a href="mailto:Plantingservice@7oroof.com">
-                        <div class="bgi email-1"></div>
-                        <span class="desktop">Email: Plantingservice@7oroof.com</span>
-                    </a>
-                    <a href="tel:+01 123456789">
-                        <div class="bgi phone-call-1"></div>
-                        <span class="desktop">+01 123456789</span>
-                    </a>
-                    <a href="https://goo.gl/maps/1nxbEkCJ946niJyK7">
-                        <div class="bgi location-1"></div>
-                        <span class="desktop">2072 Pinnickinick Street, WA 98370</span>
-                    </a>
-                </nav>
-                <div class="select">
-                    <span>English</span>
-                    <div class="bgi arrow-icon-white"></div>
+    <header class="header">
+        <div class="navbar-top">
+            <div class="header-container">
+                <ul class="addressbar">
+                    <li>
+                        <a href="mailto:Plantingservice@7oroof.com">
+                            <div class="addressbar-email addressbar-bgi"></div>
+                            <span>Email: Plantingservice@7oroof.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+01123456789">
+                            <div class="addressbar-tel addressbar-bgi"></div>
+                            <span>+01 123456789</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/maps/xMe4WatgxmxH9cz2A" target="_blank">
+                            <div class="addressbar-location addressbar-bgi"></div>
+                            <span>Pinnickinnick St, Clarksburg, WV 26301, USA</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="selection">
+                    English
                 </div>
             </div>
         </div>
-        <div class="header bgc-white">
-            <div class="container nav-bottom">
-                <div class="logo">
-                    <img src="images/1-LOGO.svg" alt="logo">
-                </div>
-                <div class="navbar">
-                    <div class="menu">
-                        <div class="btn bgi menu-1"></div>
-                        <ul class="desktop">
-                            <li class="select">
-                                <span>Home</span>
-                                <div class="bgi arrow-icon-black"></div>
-                            </li>
-                            <li class="select color-green">
-                                <span>Company</span>
-                                <div class="bgi arrow-icon-green"></div>
-                            </li>
-                            <li class="select">
-                                <span>Services</span>
-                                <div class="bgi arrow-icon-black"></div>
-                            </li>
-                            <li class="select">
-                                <span>Project</span>
-                                <div class="bgi arrow-icon-black"></div>
-                            </li>
-                            <li class="select">
-                                <span>Blog</span>
-                                <div class="bgi arrow-icon-black"></div>
-                            </li>
-                            <li class="select">Contact</li>
-                        </ul>
-                    </div>
-                    <button class="btn call bgc-green">
-                        <div class="bgi phone"></div>
-                        <span class="desktop">Call Us</span>
-                    </button>
+        <div class="navbar">
+            <div class="header-container">
+                <a class="logo" href="#"></a>
+                <div class="navbar-buttons">
+                    <a class="button nav-btn " href="tel:+01123456789">
+                        <div class="navbar-phone"></div>
+                        <span>Call Us</span>
+                    </a>
+                    <div class="navbar-menu-btn"></div>
+                    <ul class="navbar-menu">
+                        <li class="navbar-item">
+                            Home
+                        </li>
+                        <li class="navbar-item">
+                            Company
+                        </li>
+                        <li class="navbar-item">
+                            Services
+                        </li>
+                        <li class="navbar-item">
+                            Project
+                        </li>
+                        <li class="navbar-item">
+                            Blog
+                        </li>
+                        <li>Contact</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="salutation">
-            <img src="images/1014x673-medium-shot-woman-holding-plant-pots.jpg"
-                alt="1014x673-medium-shot-woman-holding-plant-pots">
-            <div class="content">
-                <div class="text-heading">
-                    <div class="landscape-plainting-services">
-                        <div class="bgi vector"></div>landscape plainting services
-                    </div>
-                    <div class="Perfect-Landscape">
-                        <h2 class="color-main-2">Perfect Landscape</h2>
-                        <h2 class="mobile color-main-2">Solution.</h2>
-                        <h2 class="desktop color-main-1">Solution.</h2>
-                    </div>
-                    <p class="color-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                        luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                    </p>
-                </div>
-                <div class="button">
-                    <button class="btn bgc-green">Get A Quate</button>
-                    <a href="#">
-                        <span>See how it works</span>
-                        <div class="bgi Arrow-rigth-Icon"></div>
-                    </a>
-
-                </div>
-                <div class="mobile">
-                    <div class="row">
-                        <div class="Happy-Customrs-mob round-button-gradient">
-                            <span class="fw-bold">500+</span>
-                            <span>Happy Customrs</span>
-                        </div>
-                        <div class="Happy-Customrs-mob round-button-gradient">
-                            <span class="fw-bold">800+</span>
-                            <span>Garden Created</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="desktop">
-                    <div class="row">
-                        <div class="Happy-Customrs-desk">
-                            <p class="round-button-gradient">500+</p>Happy Customrs
-                        </div>
-                        <div class="Happy-Customrs-desk">
-                            <p class="round-button-gradient">800+</p>Garden Created
-                        </div>
-                        <div class="Happy-Customrs-desk">
-                            <p class="round-button-gradient">100+</p>Team Members
-                        </div>
-
-                    </div>
-                </div>
-            </div>
     </header>
+
+    <main>
+
+        <div class="solution">
+
+            <div class="solution-container">
+                <img class="bgi-bg" src="images/1014x673-medium-shot-woman-holding-plant-pots.jpg"
+                    alt="medium-shot-woman-holding-plant-pots">
+                <div class="solution__text">
+
+                    <div class="solution__text-heading">
+                        <p>landscape planting services</p>
+                        <h2>Perfect Landscape
+                            <span class="color-green">Solution.</span>
+                        </h2>
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                    luctus nec ullamcorper mattis, pulvinar dapibus leo.
+
+                </div>
+
+                <div class="solution__buttons solution-container">
+
+                    <img class="bgi-sm" src="images/BG-Img.svg" alt="BG-Img">
+
+                    <div class="solution__buttons--upper">
+                        <a class="button sol-up-btn " href="#">Get A Quate </a>
+                        <a class="how-it-works" href="#">See how it works</a>
+                    </div>
+
+                    <ul class="solution__buttons--lower">
+                        <li class="sol-low-btn">
+                            <div class="round-button">500+</div>
+                            Happy Customrs
+                        </li>
+                        <li class="sol-low-btn">
+                            <div class="round-button">800+</div>
+                            Garden Created
+                        </li>
+                        <li class="desktop">
+                            <div class="sol-low-btn">
+                                <div class="round-button">100+</div>
+                                Team Members
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="services-header">
+                <h2>Services We
+                    <span class="color-green">Provide</span>
+                </h2>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took of type and
+                    scrambled it to make a type specimen book.</p>
+            </div>
+
+            <div class="services-cards">
+                <div class="services-card ">
+                    <div class="tree-planting card-content">
+                        <h5>Tree Planting</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="services-card ">
+                    <div class="grass-cuttin card-content">
+                        <h5>Grass Cuttin</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="services-card ">
+                    <div class="garden-design card-content">
+                        <h5>Garden Design</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="services-card ">
+                    <div class="plant-growing card-content">
+                        <h5>Plant Growing</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="services-card ">
+                    <div class="flower-scaping card-content">
+                        <h5>Flower Scaping</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="services-card ">
+                    <div class="branch-cutting card-content">
+                        <h5>Branch Cutting</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="services-card ">
+                    <div class="pests card-content">
+                        <h5>Pests, Weed Control</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="services-card ">
+                    <div class="watering card-content">
+                        <h5>Watering & Irrigation</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about-container">
+            <div class="about-images">
+                <div class="about-images__bg"></div>
+
+                <img class="about-images__1" src="/images/close-up-hands-holding-house-plant.jpg"
+                    alt="close-up-hands-holding-house-plant">
+                <img class="about-images__2" src="/images/medium-shot-man-looking-plant.jpg"
+                    alt="medium-shot-man-looking-plant">
+            </div>
+            <div class="about-text">
+                <div class="about__header">
+                    <h2><span class="color-green">25+ Years of Experience</span> in
+                        Gadening & Landscaping</h2>
+                </div>
+                <div class="about__content">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been of typ the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the text industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it make a type specimen book.Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem Ipsum text has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled.</p>
+                </div>
+            </div>
+            <div class="about__cards">
+                <div class="about__card ">
+                    <div class="emblem mission"></div> Our Mission
+                </div>
+                <div class="about__card">
+                    <div class="emblem vision"></div>Our Vision
+                </div>
+                <div class="about__card">
+                    <div class="emblem team"></div>Support Team
+                </div>
+                <div class="about__card">
+                    <div class="emblem trust"></div>Clients Trust
+                </div>
+            </div>
+            <div class="about__button button">Discover More</div>
+
+        </div>
+
+
+        <div class="choose">
+            <div class="choose-container">
+                <div class="choose-images"></div>
+                <div class="choose-text">
+                    <div class="choose-text__header"></div>
+                    <div class="choose-text__content"></div>
+                    <div class="choose-text__"></div>
+                    <div class="choose-text__button"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 
 </html>

@@ -1,0 +1,129 @@
+.about-container {
+    max-width: 375px;
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+.about-images {
+    position: relative;
+    height: 480px;
+}
+
+
+
+.about-images__bg {
+    width: 188px;
+    height: 293px;
+    background-color: $main-3-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.about-images__1 {
+    position: absolute;
+    top: 300px;
+    left: 103px;
+    z-index: 1;
+}
+
+.about-images__2 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 0;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about__header {
+    color: $heading-font-color;
+    text-align: center;
+    /* Mobile Font / H1 / Bold */
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 -5px;
+}
+
+.about__content {
+    color: $paragraph-color;
+    /* Mobile Font/H6/Regular */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about__cards {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.about__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 162px;
+    height: 94px;
+    color: $heading-font-color;
+    text-align: center;
+    /* Mobile Font/H6/Bold */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px;
+    border-radius: 5px;
+    /* Normal Shadow */
+    box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+}
+
+.emblem {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 30px 30px, 40px 40px, 50px 38px;
+    background-position: center, center, center;
+}
+
+.mission {
+    background-image: url(/images/Our-Mission.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+}
+
+.vision {
+    background-image: url(/images/Our-Vision.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+}
+
+.team {
+    background-image: url(/images/Support-Team.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+}
+
+.trust {
+    background-image: url(/images/Clients-Trust.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+}
+
+.about__button {
+    margin: 0 auto;
+    width: 167px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
