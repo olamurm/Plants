@@ -768,19 +768,19 @@ header span {
 }
 
 .mission {
-  background-image: url(/images/Our-Mission.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+  background-image: url(images/Our-Mission.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
 }
 
 .vision {
-  background-image: url(/images/Our-Vision.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+  background-image: url(images/Our-Vision.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
 }
 
 .team {
-  background-image: url(/images/Support-Team.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+  background-image: url(images/Support-Team.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
 }
 
 .trust {
-  background-image: url(/images/Clients-Trust.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+  background-image: url(images/Clients-Trust.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
 }
 
 .about__button {
