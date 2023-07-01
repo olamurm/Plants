@@ -7,7 +7,7 @@
 
 .about-images {
     position: relative;
-    height: 480px;
+    height: 460px;
 }
 
 
@@ -24,8 +24,8 @@
 
 .about-images__1 {
     position: absolute;
-    top: 300px;
-    left: 103px;
+    bottom: 0;
+    right: 0;
     z-index: 1;
 }
 
@@ -100,7 +100,7 @@
     width: 40px;
     height: 40px;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 30px 30px, 40px 40px, 50px 38px;
+    background-size: 30px 30px, 50px 38px, 40px 40px;
     background-position: center, center, center;
 }
 
@@ -126,4 +126,123 @@
     height: 40px;
     text-align: center;
     line-height: 40px;
+}
+
+
+
+@media (min-width: 1410px) {
+    .desktop {
+        display: block;
+    }
+
+    .about-container {
+        max-width: 1410px;
+        width: 100%;
+        padding: 100px 0 0 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        gap: 260px;
+    }
+
+    .about-images {
+        height: 900px;
+    }
+
+
+    .about-images__bg {
+        position: relative;
+        width: 450px;
+        height: 700px;
+
+    }
+
+    .about-images__1 {
+        width: 456px;
+        height: 356px;
+        left: 240px;
+    }
+
+    .about-images__2 {
+        top: 36px;
+        left: 24px;
+        width: 600px;
+        height: 740px;
+    }
+
+    .about-content {
+        padding-top: 36px;
+    }
+
+    .about-text {
+        gap: 30px;
+    }
+
+    .about__header {
+        text-align: left;
+        font-size: 45px;
+        font-weight: 800;
+    }
+
+    .about__content {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: Poppins;
+        gap: 30px;
+    }
+
+    .about__cards {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .about__card {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 330px;
+        height: 97px;
+        font-size: 24px;
+        text-transform: capitalize;
+        padding: 32px;
+        gap: 30px;
+    }
+
+    .emblem {
+        width: 67px;
+        height: 67px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 50px 50px, 55px 42px, 67px 67px;
+        background-position: center, center, center;
+    }
+
+    .mission {
+        background-image: url(images/Our-Mission.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+    }
+
+    .vision {
+        background-image: url(images/Our-Vision.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+    }
+
+    .team {
+        background-image: url(images/Support-Team.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+    }
+
+    .trust {
+        background-image: url(images/Clients-Trust.svg), url(images/Ellipse-26.svg), url(images/Ellipse-25.svg);
+    }
+
+    .about__button {
+        margin: 0;
+        width: 167px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+
+
+
 }
