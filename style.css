@@ -926,11 +926,13 @@ header span {
 }
 .choose-flags p {
   font-size: 16px;
+  line-height: 20px;
   padding-left: 30px;
-  background-image: url(images/tick.svg);
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-position-y: center;
+  background-image: url(images/tick.svg), url(images/Ellipse-27.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 13px 13px, 20px 20px;
+  background-position-y: center, center;
+  background-position-x: 3px, 0;
 }
 
 @media (min-width: 1410px) {
@@ -970,8 +972,10 @@ header span {
   }
   .choose-flags p {
     font-size: 24px;
+    line-height: 30px;
     padding-left: 50px;
-    background-size: 40px 40px;
+    background-size: 20px 20px, 30px 30px;
+    background-position-x: 5px, 0;
   }
   .button {
     width: 190px;
