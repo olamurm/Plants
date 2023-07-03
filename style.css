@@ -384,15 +384,18 @@ header span {
 @media (min-width: 1410px) {
   .solution {
     flex-direction: row-reverse;
+    width: 1410px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .bgi-bg {
+    min-width: 50%;
+    max-width: 1013px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .solution-container {
     max-width: 1410px;
-    width: 1410px;
-    margin: 0 auto;
-  }
-  .bgi-bg {
-    overflow: hidden;
-    max-width: 50%;
   }
   .solution__text {
     padding-top: 150px;
