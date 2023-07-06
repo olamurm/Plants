@@ -53,8 +53,8 @@
 .working__card {
     padding: 20px;
     background-image: url(images/workin-card-BG-Img.svg);
-    background-position-x: right;
-    background-position-y: center;
+    background-position-x: 240px;
+    background-position-y: 55px;
     background-repeat: no-repeat;
     border-radius: 10px;
     /* Normal Shadow */
@@ -228,10 +228,6 @@
     }
 
     .working__text {
-        // display: flex;
-        // flex-direction: column;
-        // gap: 15px;
-        // text-align: center;
 
         h2 {
             font-size: 45px;
