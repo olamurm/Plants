@@ -124,7 +124,6 @@ header span {
     }
 }
 
-
 .nav-btn {
     order: 1;
     width: 40px;
@@ -132,12 +131,12 @@ header span {
     border-radius: 10px;
     background: $main-1-color;
 
-    &:hover .navbar-phone {
+    &:hover .btn-call {
         background-image: url(images/phone-green.svg);
     }
 }
 
-.navbar-phone {
+.btn-call {
     width: 20px;
     height: 20px;
     background-image: url(images/phone-white.svg);
@@ -200,7 +199,7 @@ header span {
         width: 80%;
     }
 
-    .navbar-phone {
+    .btn-call {
         width: 30px;
         height: 30px;
         background-size: 30px 30px;

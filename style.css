@@ -146,11 +146,11 @@ header span {
   border-radius: 10px;
   background: rgb(0, 115, 12);
 }
-.nav-btn:hover .navbar-phone {
+.nav-btn:hover .btn-call {
   background-image: url(images/phone-green.svg);
 }
 
-.navbar-phone {
+.btn-call {
   width: 20px;
   height: 20px;
   background-image: url(images/phone-white.svg);
@@ -203,7 +203,7 @@ header span {
   .navbar-buttons {
     width: 80%;
   }
-  .navbar-phone {
+  .btn-call {
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
@@ -986,4 +986,184 @@ header span {
     height: 58px;
     line-height: 58px;
   }
+}
+.working-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  width: 100%;
+  padding: 50px 20px 50px 20px;
+  gap: 30px;
+}
+
+.working-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.working__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+.working__text h2 {
+  color: #212529;
+  /* Mobile Font / H1 / Bold */
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.working__text p {
+  color: var(--typography-paragraph-color, #676767);
+  text-align: center;
+  /* Mobile Font/H6/Regular */
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.working__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.working__card {
+  padding: 20px;
+  background-image: url(images/workin-card-BG-Img.svg);
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  /* Normal Shadow */
+  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+}
+.working__card .working__card-top {
+  color: #E3E3E3;
+  font-family: Nunito;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: right;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+.working__card:hover {
+  background-color: rgb(0, 115, 12);
+  background-image: url(images/Group.svg);
+  background-size: 76px 112px;
+}
+.working__card:hover .working__card-text h5,
+.working__card:hover .working__card-text p {
+  color: #FFF;
+}
+.working__card:hover .working__card-top {
+  color: #FFF;
+  text-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.working__card:hover .consultation {
+  background-image: url(images/Property-Default-1.svg);
+}
+.working__card:hover .design {
+  background-image: url(images/Property-Default-2.svg);
+}
+.working__card:hover .maintenance {
+  background-image: url(images/Property-Default-3.svg);
+}
+.working__card:hover .complete {
+  background-image: url(images/Property-Default-4.svg);
+}
+
+.working__card-text h5 {
+  color: #212529;
+  /* Mobile Font/H5/Bold */
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.working__card-text p {
+  color: #676767;
+  /* Mobile Font/H6/Regular */
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.consultation {
+  background-image: url(images/Property-Active-1.svg);
+}
+
+.design {
+  background-image: url(images/Property-Active-2.svg);
+}
+
+.maintenance {
+  background-image: url(images/Property-Active-3.svg);
+}
+
+.complete {
+  background-image: url(images/Property-Active-4.svg);
+}
+
+.working__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 224px;
+  background-image: url(images/hand-holding-small-tree-planting\ 2.jpg);
+  background-size: 345px 224px;
+  color: white;
+  text-align: center;
+  /* Mobile Font / H3 / Bold */
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.working-btn-call {
+  background-color: white;
+  color: rgb(0, 115, 12);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 137px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.working-btn-call p {
+  display: inline-flex;
+  /* Mobile Font / H6 / Extrabold */
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  align-items: center;
+}
+.working-btn-call p:before {
+  content: url(images/phone-green.svg);
+  padding-right: 10px;
+  padding-top: 5px;
+}
+.working-btn-call:hover {
+  color: white;
+  background-color: rgb(0, 115, 12);
+}
+.working-btn-call:hover p:before {
+  content: url(images/phone-white.svg);
 }/*# sourceMappingURL=style.css.map */
