@@ -16,14 +16,14 @@
 }
 
 .staff__text {
+    text-align: center;
+    font-family: Nunito;
+    font-style: normal;
+
     h2 {
         color: #000;
-        text-align: center;
-
         /* Mobile Font / H1 / Bold */
-        font-family: Nunito;
         font-size: 28px;
-        font-style: normal;
         font-weight: 700;
         line-height: normal;
         padding-bottom: 15px;
@@ -31,20 +31,13 @@
 
     p {
         color: $paragraph-color;
-        text-align: center;
-
         /* Mobile Font/H6/Regular */
-        font-family: Nunito;
         font-size: 14px;
-        font-style: normal;
         font-weight: 400;
         line-height: 22px;
     }
 }
 
-// .staff__cards {}
-
-// .sliders {}
 .social-holder {
 
     display: none;
@@ -183,16 +176,44 @@
     }
 }
 
+// =============== web =================
+@media (min-width:1410px) {
+    .staff-container {
+        min-width: 1410px;
+        padding: 0;
+    }
 
+    .staff__text {
+        text-align: left;
 
-// 
+        width: 956px;
 
-// .google {}
+        h2 {
+            font-size: 45px;
+            font-weight: 800;
+        }
 
-// .fasebook {}
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
 
-// .twitter {}
+    .staff-content {
+        flex-direction: row;
+        gap: 264px;
 
-// .pinterest {}
+        align-items: center;
+    }
 
-// .linkedin {}
+    more-button {
+        width: 190px;
+    }
+
+    .staff__cards {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
