@@ -1362,6 +1362,8 @@ header span {
   height: 408px;
   display: flex;
   align-items: end;
+  background-repeat: no-repeat;
+  background-size: 330px 408px;
 }
 .staff__card-content:hover .staff__card-name {
   justify-content: center;

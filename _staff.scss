@@ -129,6 +129,8 @@
     height: 408px;
     display: flex;
     align-items: end;
+    background-repeat: no-repeat;
+    background-size: 330px 408px;
 
 
     &:hover .staff__card-name {
