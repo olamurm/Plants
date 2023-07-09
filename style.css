@@ -1249,4 +1249,157 @@ header span {
     width: 100px;
     align-items: center;
   }
+}
+.staff-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  width: 100%;
+  padding: 50px 20px 50px 20px;
+  gap: 30px;
+  align-items: center;
+}
+
+.staff-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.staff__text h2 {
+  color: #000;
+  text-align: center;
+  /* Mobile Font / H1 / Bold */
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+.staff__text p {
+  color: rgb(103, 103, 103);
+  text-align: center;
+  /* Mobile Font/H6/Regular */
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.social-holder {
+  display: none;
+}
+.social-holder a {
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}
+
+.social-btn-google {
+  background-image: url(images/Google.svg);
+}
+.social-btn-google:hover {
+  background-image: url(images/HoverGoogle.svg);
+}
+
+.social-btn-fasebook {
+  background-image: url(images/Facebook.svg);
+}
+.social-btn-fasebook:hover {
+  background-image: url(images/HoverFacebook.svg);
+}
+
+.social-btn-twitter {
+  background-image: url(images/Twitter.svg);
+}
+.social-btn-twitter:hover {
+  background-image: url(images/HoverTwitter.svg);
+}
+
+.social-btn-pinterest {
+  background-image: url(images/Pinterest.svg);
+}
+.social-btn-pinterest:hover {
+  background-image: url(images/HoverPinterest.svg);
+}
+
+.social-btn-linkedin {
+  background-image: url(images/linkedin.svg);
+}
+.social-btn-linkedin:hover {
+  background-image: url(images/HoverLinkedin.svg);
+}
+
+.staff__card {
+  display: flex;
+  width: 330px;
+  height: 62px;
+  background-repeat: no-repeat;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-end;
+  border-radius: 5px;
+  background: linear-gradient(1deg, #00730C 0.01%, rgba(251, 246, 238, 0) 98.84%);
+  padding: 10px;
+}
+.staff__card:hover {
+  height: 408px;
+  justify-content: center;
+}
+.staff__card:hover .social-holder {
+  display: block;
+}
+
+.staff__card-content {
+  border-radius: 5px;
+  content: "";
+  width: 330px;
+  height: 408px;
+  display: flex;
+  align-items: end;
+}
+.staff__card-content:hover .staff__card-name {
+  justify-content: center;
+}
+
+.design1 {
+  background-image: url(images/beautiful-woman-apron-posing-among-flowers-orangery.jpg);
+}
+
+.design2 {
+  background-image: url(images/young-beautiful-florist-posing-smiling-among-flowers.jpg);
+}
+
+.design3 {
+  background-image: url(images/portrait-happy-professional-gardener-holding-flowerpot-watering-can.jpg);
+}
+
+.design4 {
+  background-image: url(images/gardeners-with-plants-beautiful-garden-center.jpg);
+}
+
+.staff__card-name {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-style: normal;
+  font-family: Nunito;
+  line-height: normal;
+}
+.staff__card-name h4 {
+  /* Mobile Font / H4 / Bold */
+  font-size: 18px;
+  font-weight: 700;
+}
+.staff__card-name p {
+  /* Mobile Font/H6/Regular */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 }/*# sourceMappingURL=style.css.map */
