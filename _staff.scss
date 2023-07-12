@@ -1,9 +1,6 @@
 .staff-container {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    max-width: 375px;
-    width: 375px;
     padding: 50px 20px;
     gap: 30px;
     align-items: center
@@ -187,7 +184,6 @@
 // =============== web =================
 @media (min-width:1410px) {
     .staff-container {
-        min-width: 1410px;
         padding: 0;
     }
 
