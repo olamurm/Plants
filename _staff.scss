@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     max-width: 375px;
-    width: 100%;
-    padding: 50px 20px 50px 20px;
+    width: 375px;
+    padding: 50px 20px;
     gap: 30px;
     align-items: center
 }
@@ -31,6 +31,94 @@
 
     p {
         color: $paragraph-color;
+        /* Mobile Font/H6/Regular */
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
+
+
+.staff__card-content {
+    width: 330px;
+    height: 408px;
+
+    &:hover .staff__card-name {
+        justify-content: center;
+    }
+}
+
+.staff__card-bgi {
+    display: flex;
+    align-items: end;
+    border-radius: 5px;
+    width: 330px;
+    height: 408px;
+    background-repeat: no-repeat;
+
+}
+
+.staff__cards.slick-initialized.slick-slider {
+    width: 330px;
+}
+
+.design1 {
+    background-image: url(images/beautiful-woman-apron-posing-among-flowers-orangery.jpg);
+}
+
+.design2 {
+    background-image: url(images/young-beautiful-florist-posing-smiling-among-flowers.jpg);
+}
+
+.design3 {
+    background-image: url(images/portrait-happy-professional-gardener-holding-flowerpot-watering-can.jpg);
+}
+
+.design4 {
+    background-image: url(images/gardeners-with-plants-beautiful-garden-center.jpg);
+}
+
+.staff__card {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-repeat: no-repeat;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+
+    border-radius: 5px;
+    background: linear-gradient(1deg, #00730C 0.01%, rgba(251, 246, 238, 0.00) 98.84%);
+    padding: 10px;
+
+    &:hover {
+        height: 100%;
+        justify-content: center;
+    }
+
+    &:hover .social-holder {
+        display: block;
+
+    }
+}
+
+.staff__card-name {
+    display: flex;
+    flex-direction: column;
+    color: $color-white;
+    font-style: normal;
+    font-family: Nunito;
+    line-height: normal;
+
+
+    h4 {
+        /* Mobile Font / H4 / Bold */
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    p {
         /* Mobile Font/H6/Regular */
         font-size: 14px;
         font-weight: 400;
@@ -96,88 +184,6 @@
     }
 }
 
-
-.staff__card {
-    display: flex;
-    width: 330px;
-    height: 62px;
-    background-repeat: no-repeat;
-    text-align: center;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: flex-end;
-
-    border-radius: 5px;
-    background: linear-gradient(1deg, #00730C 0.01%, rgba(251, 246, 238, 0.00) 98.84%);
-    padding: 10px;
-
-    &:hover {
-        height: 408px;
-        justify-content: center;
-    }
-
-    &:hover .social-holder {
-        display: block;
-
-    }
-}
-
-.staff__card-content {
-    border-radius: 5px;
-    content: "";
-    width: 330px;
-    height: 408px;
-    display: flex;
-    align-items: end;
-    background-repeat: no-repeat;
-    background-size: 330px 408px;
-
-
-    &:hover .staff__card-name {
-        justify-content: center;
-    }
-}
-
-.design1 {
-    background-image: url(images/beautiful-woman-apron-posing-among-flowers-orangery.jpg);
-}
-
-.design2 {
-    background-image: url(images/young-beautiful-florist-posing-smiling-among-flowers.jpg);
-
-}
-
-.design3 {
-    background-image: url(images/portrait-happy-professional-gardener-holding-flowerpot-watering-can.jpg);
-}
-
-.design4 {
-    background-image: url(images/gardeners-with-plants-beautiful-garden-center.jpg);
-}
-
-.staff__card-name {
-    display: flex;
-    flex-direction: column;
-    color: $color-white;
-    font-style: normal;
-    font-family: Nunito;
-    line-height: normal;
-
-
-    h4 {
-        /* Mobile Font / H4 / Bold */
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    p {
-        /* Mobile Font/H6/Regular */
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 22px;
-    }
-}
-
 // =============== web =================
 @media (min-width:1410px) {
     .staff-container {
@@ -187,7 +193,6 @@
 
     .staff__text {
         text-align: left;
-
         width: 956px;
 
         h2 {
@@ -205,17 +210,14 @@
     .staff-content {
         flex-direction: row;
         gap: 264px;
-
         align-items: center;
     }
 
-    more-button {
+    .more-button {
         width: 190px;
     }
 
-    .staff__cards {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
+    .staff__cards.slick-initialized.slick-slider {
+        width: 1410px;
     }
 }

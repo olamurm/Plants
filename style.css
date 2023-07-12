@@ -1255,8 +1255,8 @@ header span {
   display: flex;
   flex-direction: column;
   max-width: 375px;
-  width: 100%;
-  padding: 50px 20px 50px 20px;
+  width: 375px;
+  padding: 50px 20px;
   gap: 30px;
   align-items: center;
 }
@@ -1282,6 +1282,84 @@ header span {
 }
 .staff__text p {
   color: rgb(103, 103, 103);
+  /* Mobile Font/H6/Regular */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.staff__card-content {
+  width: 330px;
+  height: 408px;
+}
+.staff__card-content:hover .staff__card-name {
+  justify-content: center;
+}
+
+.staff__card-bgi {
+  display: flex;
+  align-items: end;
+  border-radius: 5px;
+  width: 330px;
+  height: 408px;
+  background-repeat: no-repeat;
+}
+
+.staff__cards.slick-initialized.slick-slider {
+  width: 330px;
+}
+
+.design1 {
+  background-image: url(images/beautiful-woman-apron-posing-among-flowers-orangery.jpg);
+}
+
+.design2 {
+  background-image: url(images/young-beautiful-florist-posing-smiling-among-flowers.jpg);
+}
+
+.design3 {
+  background-image: url(images/portrait-happy-professional-gardener-holding-flowerpot-watering-can.jpg);
+}
+
+.design4 {
+  background-image: url(images/gardeners-with-plants-beautiful-garden-center.jpg);
+}
+
+.staff__card {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  background-repeat: no-repeat;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-end;
+  border-radius: 5px;
+  background: linear-gradient(1deg, #00730C 0.01%, rgba(251, 246, 238, 0) 98.84%);
+  padding: 10px;
+}
+.staff__card:hover {
+  height: 100%;
+  justify-content: center;
+}
+.staff__card:hover .social-holder {
+  display: block;
+}
+
+.staff__card-name {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-style: normal;
+  font-family: Nunito;
+  line-height: normal;
+}
+.staff__card-name h4 {
+  /* Mobile Font / H4 / Bold */
+  font-size: 18px;
+  font-weight: 700;
+}
+.staff__card-name p {
   /* Mobile Font/H6/Regular */
   font-size: 14px;
   font-weight: 400;
@@ -1334,77 +1412,6 @@ header span {
   background-image: url(images/HoverLinkedin.svg);
 }
 
-.staff__card {
-  display: flex;
-  width: 330px;
-  height: 62px;
-  background-repeat: no-repeat;
-  text-align: center;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: flex-end;
-  border-radius: 5px;
-  background: linear-gradient(1deg, #00730C 0.01%, rgba(251, 246, 238, 0) 98.84%);
-  padding: 10px;
-}
-.staff__card:hover {
-  height: 408px;
-  justify-content: center;
-}
-.staff__card:hover .social-holder {
-  display: block;
-}
-
-.staff__card-content {
-  border-radius: 5px;
-  content: "";
-  width: 330px;
-  height: 408px;
-  display: flex;
-  align-items: end;
-  background-repeat: no-repeat;
-  background-size: 330px 408px;
-}
-.staff__card-content:hover .staff__card-name {
-  justify-content: center;
-}
-
-.design1 {
-  background-image: url(images/beautiful-woman-apron-posing-among-flowers-orangery.jpg);
-}
-
-.design2 {
-  background-image: url(images/young-beautiful-florist-posing-smiling-among-flowers.jpg);
-}
-
-.design3 {
-  background-image: url(images/portrait-happy-professional-gardener-holding-flowerpot-watering-can.jpg);
-}
-
-.design4 {
-  background-image: url(images/gardeners-with-plants-beautiful-garden-center.jpg);
-}
-
-.staff__card-name {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-style: normal;
-  font-family: Nunito;
-  line-height: normal;
-}
-.staff__card-name h4 {
-  /* Mobile Font / H4 / Bold */
-  font-size: 18px;
-  font-weight: 700;
-}
-.staff__card-name p {
-  /* Mobile Font/H6/Regular */
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-}
-
 @media (min-width: 1410px) {
   .staff-container {
     min-width: 1410px;
@@ -1428,13 +1435,11 @@ header span {
     gap: 264px;
     align-items: center;
   }
-  more-button {
+  .more-button {
     width: 190px;
   }
-  .staff__cards {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+  .staff__cards.slick-initialized.slick-slider {
+    width: 1410px;
   }
 }
 .clients {
@@ -1482,10 +1487,6 @@ header span {
   height: 430px;
   padding: 20px;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
   box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
 }
 
@@ -1502,7 +1503,7 @@ header span {
   width: 135px;
   height: 127px;
   border-radius: 30px;
-  background: var(--main-liner-color, linear-gradient(1deg, #00730C 0.01%, rgba(251, 246, 238, 0) 98.84%));
+  background: linear-gradient(1deg, #00730C 0.01%, rgba(251, 246, 238, 0) 98.84%);
 }
 
 .client1 {
@@ -1558,7 +1559,7 @@ header span {
 }
 
 .clients__card-text {
-  color: var(--typography-paragraph-color, #676767);
+  color: #676767;
   /* Mobile Font/H6/Regular */
   font-family: Nunito;
   font-size: 14px;
@@ -1683,46 +1684,86 @@ header span {
     line-height: 25px;
   }
   .clients__cards.slick-initialized.slick-slider {
-    display: flex;
-    position: relative;
     width: 1410px;
+  }
+  .clients__cards.slick-initialized.slick-slider .slick-track {
+    display: flex;
+    gap: 30px;
+    width: 690px;
   }
   .clients__cards.slick-initialized.slick-slider .clients__card.slick-slide {
     display: flex;
-    width: 690px;
   }
-  .slick-slider .slick-track {
-    display: flex;
-    gap: 30px;
-  }
-  button.slick-arrow {
-    position: absolute;
-    top: -65px;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    border: 1px solid var(--main-1-color, #00730C);
-    font-size: 0;
-  }
-  button.slick-prev.slick-arrow {
-    left: 1290px;
-  }
-  button.slick-next.slick-arrow {
-    right: 0;
-  }
-  button.slick-arrow:hover {
-    background-color: #00730C;
-  }
-  button.slick-prev:before {
-    content: url(images/arrow-left-green.svg);
-  }
-  button.slick-next:before {
-    content: url(images/arrow-right-green.svg);
-  }
-  button.slick-prev:hover:before {
-    content: url(images/arrow-left-white.svg);
-  }
-  button.slick-next:hover:before {
-    content: url(images/arrow-right-white.svg);
-  }
+}
+button.slick-arrow {
+  position: absolute;
+  top: -65px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--main-1-color, #00730C);
+  font-size: 0;
+}
+
+button.slick-prev.slick-arrow {
+  left: 1290px;
+}
+
+button.slick-next.slick-arrow {
+  right: 0;
+}
+
+button.slick-arrow:hover {
+  background-color: #00730C;
+}
+
+button.slick-prev:before {
+  content: url(images/arrow-left-green.svg);
+}
+
+button.slick-next:before {
+  content: url(images/arrow-right-green.svg);
+}
+
+button.slick-prev:hover:before {
+  content: url(images/arrow-left-white.svg);
+}
+
+button.slick-next:hover:before {
+  content: url(images/arrow-right-white.svg);
+}
+
+.slick-initialized.slick-slider.slick-dotted > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li {
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li button {
+  width: 20px;
+  height: 6px;
+  background: #00730c;
+  opacity: 1;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.slick-dots li button:before {
+  content: "";
+}
+
+.slick-dots li.slick-active button {
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
